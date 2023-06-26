@@ -12,6 +12,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(methodOverride("_method"));
 app.use(animalsRouter)
 app.use(express.json());
+app.use(express.static("public"))
 
 // //--routes
 // app.get("/", (req, res) => {
