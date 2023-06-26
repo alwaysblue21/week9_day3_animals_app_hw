@@ -17,6 +17,10 @@ app.get("/animals", async (req, res) => {
 })
 
 
+app.get("/animals/new", (req, res) => {
+    res.render("new.ejs")
+})
+
 const PORT = process.env.PORT;
 app.listen(PORT, () => {
     console.log(`Listening on PORT ${PORT}`)
