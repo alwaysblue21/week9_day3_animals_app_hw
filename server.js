@@ -1,8 +1,8 @@
 require("dotenv").config();
 const express = require("express");
 const morgan = require("morgan");
-const methodOverride = require("method-override")
-const Animal = require("./models/animals")
+const methodOverride = require("method-override");
+const Animal = require("./models/animals");
 const app = express();
 
 
