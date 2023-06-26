@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <button>
+            <a href="/animals">Back to the animal list page</a>
+        </button>
+    </nav>
+
+    <form method="POST" action="/animals/<%= animal._id %>?_method=PUT">
+        <input type="text" name="species" value="<%= animal.species %>" />
+        <br/>
+        <input type="checkbox" name="extinct" <%= animal.extinct ? "checked" : "" %> />
+        <br/>
+        <input type="text" name="location" value="<%= animal.location %>" />
+        <br/>
+        <input type="text" name="lifeExpectancy" value="<%= animal.lifeExpectancy %>" />
+        <br/>
+        <input type="submit" name="" value="save edits" />
+    </form>
+</body>
+</html>

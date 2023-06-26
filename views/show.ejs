@@ -20,5 +20,11 @@
     <form method="POST" action="/animals/<%= animal._id %>?_method=DELETE">
         <input type="submit" name="" value="delete animal" />
     </form>
+
+    <a href="/animals/<%= animal._id %>/edit">
+        <button>
+            edit animal
+        </button>
+    </a>
 </body>
 </html>
