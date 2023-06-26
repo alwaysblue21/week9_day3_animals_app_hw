@@ -8,13 +8,13 @@
 <body>
     <h1>Create New Animal</h1>
     <form action="/animals" method="POST">
-        Species: <input type="text" name="species" />
+        Species: <input type="text" name="species" required />
         <br/>
         Extinct: <input type="checkbox" name="extinct" />
         <br/>
-        Location: <input type="text" name="location" />
+        Location: <input type="text" name="location" required />
         <br/>
-        Life Expectancy: <input type="text" name="lifeExpectancy" />
+        Life Expectancy: <input type="text" name="lifeExpectancy" required />
         <br/>
         <input type="submit" name="" value="Add Animal" />
     </form>
