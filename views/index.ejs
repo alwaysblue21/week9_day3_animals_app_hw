@@ -6,10 +6,19 @@
     <title>Animals App</title>
 </head>
 <body>
+    <nav>
+        <button>
+        <a href="animals/new">Add an animal</a>
+        </button>
+    </nav>
     <h1>Animals App</h1>
     <ul>
         <% animals.forEach(animal => { %>
-            <li><%= animal.species %></li>
+            <li>
+                <a href="/animals/<%= animal._id %>" >
+                <%= animal.species %>
+                </a>
+            </li>
         <% }) %>
     </ul>
 </body>
