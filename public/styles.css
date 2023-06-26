@@ -13,5 +13,10 @@ h1{
 
 li {
     display: block;
+    padding: 10px;
+    font-size: 25px;
 }
 
+p {
+    font-size: 25px;
+}
